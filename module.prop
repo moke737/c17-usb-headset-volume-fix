@@ -1,0 +1,6 @@
+id=c17_usb_volume_fix
+name=ColorOS17 Type-C Headset Volume Fix
+version=4.0
+versionCode=4
+author=DSH
+description=Add the missing DEVICE_CATEGORY_USB_HEADSET volume curves. The ported Android 17 framework maps AUDIO_DEVICE_OUT_USB_HEADSET to the new DEVICE_CATEGORY_USB_HEADSET, but the vendor audio_policy_volumes.xml (Android 16 vintage) has no curve for it, so the lookup falls back to FULL_SCALE_VOLUME_CURVE and every index maps to 0 dB. Adds 14 mirrored curves for the new category.

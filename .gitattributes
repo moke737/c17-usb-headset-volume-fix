@@ -1,0 +1,9 @@
+# Force LF for everything the module ships.  A CRLF shell script would break
+# on Android (/system/bin/sh cannot parse it), so never let git normalise these.
+* text=auto eol=lf
+
+*.sh          text eol=lf
+*.prop        text eol=lf
+*.xml         text eol=lf
+*.binary      text eol=lf
+updater-script text eol=lf
